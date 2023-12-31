@@ -4,7 +4,7 @@ import Cookies from "js-cookie";
 
 const Header = () => {
   const existingToken = Cookies.get("token");
-  const [isModalOpen, setModalOpen] = useState(!existingToken);
+  const [isModalOpen, setModalOpen] = useState(false);
 
   const openModal = () => {
     setModalOpen(true);
@@ -36,7 +36,7 @@ const Header = () => {
                   letterSpacing: "1px",
                 }}
               >
-                AutoBongs
+                {/* AutoBongs */}
               </h1>
             </a>
           </div>
@@ -55,7 +55,7 @@ const Header = () => {
                 <a
                   href="/"
                   onClick={handleLogout}
-                  className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-400/90 hover:bg-blue-700 focus:shadow-outline focus:outline-none"
+                  className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white rounded shadow-md bg-[#5024CE] hover:bg-[#B69DFE] focus:shadow-outline focus:outline-none hover:transition hover:duration-150 hover:ease-in-out transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
                 >
                   Sign out
                 </a>
@@ -64,7 +64,7 @@ const Header = () => {
               <li>
                 <button
                   onClick={openModal}
-                  className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-400/90 hover:bg-blue-700 focus:shadow-outline focus:outline-none"
+                  className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white  rounded shadow-md bg-[#5024CE] hover:bg-[#B69DFE] focus:shadow-outline focus:outline-none hover:transition hover:duration-150 hover:ease-in-out transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300"
                 >
                   Sign up
                 </button>
