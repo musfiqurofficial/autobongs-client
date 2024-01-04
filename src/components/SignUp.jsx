@@ -209,7 +209,7 @@ const SignUp = ({ isOpen, onClose }) => {
                             : "bg-gray-400 cursor-not-allowed"
                         }`}
                       >
-                        Sing Up/ Sign in
+                        Sing Up
                       </button>
                     </div>
                   </form>
@@ -225,7 +225,7 @@ const SignUp = ({ isOpen, onClose }) => {
                     {/* Sign up with google button  */}
                     <button
                      onClick={() => {
-                      window.location.href = '/auth/google'; // Redirect to the authentication route
+                      window.location.href = 'https://audobongs-server.vercel.app/auth/google'; // Redirect to the authentication route
                     }}
                       className="flex items-center bg-white border border-gray-300 rounded-lg shadow-md px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 outline-none"
                     >

@@ -66,7 +66,7 @@ const Header = () => {
                   onClick={openModal}
                   className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white  rounded shadow-md bg-[#5024CE] hover:bg-[#B69DFE] focus:shadow-outline focus:outline-none hover:transition hover:duration-150 hover:ease-in-out transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300"
                 >
-                  Sign up
+                  Beta Signup
                 </button>
                 <SignUp isOpen={isModalOpen} onClose={closeModal} />
               </li>
