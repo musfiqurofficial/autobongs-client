@@ -59,40 +59,40 @@ function App() {
         <div className="absolute top-0 w-full">{/* <Header /> */}</div>
         <div className="max-w-full w-full h-screen flex flex-col justify-end items-center text-white px-4">
           <h1
-            className="text-[50px] sm:text-[110px] font-[900] uppercase m-0 headline-text tracking-[10px] sm:tracking-[20px]"
-            style={{ textShadow: "5px 3px 5px #000000" }}
+            className="text-[50px] sm:text-[115px] font-[700] uppercase headline-text tracking-[10px] sm:tracking-[20px] "
+            style={{ textShadow: "5px 3px 5px #000000", lineHeight: "1.3" }}
           >
             AutoBongs
           </h1>
           <p
-            className="text-[18px] sm:text-[25px] font-[700] max-w-[650px] text-center mb-[50px] mt-[0px]"
-            style={{ textShadow: "5px 3px 5px #000000", letterSpacing: "1px" }}
+            className="text-[18px] sm:text-[31px] font-[700] text-center mb-[60px] mt-[0px] ml-[10px] fontStyle"
+            style={{ textShadow: "5px 3px 5px #000000",lineHeight: "1.15", }}
           >
-            Autobongs is an innovative and optimized ecommerce platform for
-            devices and accessories used in the enjoyment of cannabis, nicotine,
-            and functional mushrooms.
+            Autobongs is an innovative and optimized <br /> ecommerce platform
+            for devices and accessories <br /> used in the enjoyment of
+            cannabis, nicotine, and <br /> functional mushrooms.
           </p>
           {existingToken ? (
-            <button className="text-[18px] sm:text-[24px] font-[500] px-8 py-4 sm:px-[50px] sm:py-[18px] rounded-full border-2 border-white underline">
+            <button className="text-[18px] sm:text-[24px] font-[500] px-8 h-[74px] sm:px-[60px]  rounded-full border-[1px] border-white underline">
               <a href={`mailto:${contactEmail}`}>Contact Us</a>
             </button>
           ) : (
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
               {" "}
               <button
                 onClick={openModal}
-                className="text-[18px] font-[500] px-8 h-[80px] sm:px-[50px] sm:py-[18px] border-2 border-[#5024CE] tracking-wide text-white rounded-full shadow-md bg-[#5024CE] hover:bg-[#B69DFE] hover:border-[#B69DFE] focus:shadow-outline focus:outline-none hover:transition hover:duration-150 hover:ease-in-out transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100  duration-300"
+                className="text-[18px] sm:text-[24px] font-[500] px-8 h-[74px] sm:px-[50px]  rounded-full border-[1px] border-white underline"
               >
                 Beta User Signup
               </button>
-              <button className="text-[18px] sm:text-[24px] font-[500] px-8 h-[80px] sm:px-[50px] sm:py-[18px] rounded-full border-2 border-white hover:underline">
+              <button className="text-[18px] sm:text-[24px] font-[500] px-8 h-[74px] sm:px-[60px]  rounded-full border-[1px] border-white underline">
                 <a href={`mailto:${contactEmail}`}>Contact Us</a>
               </button>
             </div>
           )}
           <SignUp isOpen={isModalOpen} onClose={closeModal} />
 
-          <span className="text-center mt-[50px] mb-3">
+          <span className="text-center text-[21px] mt-[40px]">
             All Right Reserved - © Copyright Autobongs 2023
           </span>
         </div>
