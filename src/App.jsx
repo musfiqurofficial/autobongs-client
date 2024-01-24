@@ -65,8 +65,8 @@ function App() {
             AutoBongs
           </h1>
           <p
-            className="text-[18px] sm:text-[31px] font-[700] text-center mb-[60px] mt-[0px] ml-[10px] fontStyle"
-            style={{ textShadow: "5px 3px 5px #000000",lineHeight: "1.15", }}
+            className="text-[18px] sm:text-[35.5px] font-[700] text-center mb-[60px] mt-[0px] fontStyle"
+            style={{ textShadow: "5px 3px 5px #000000",lineHeight: "1.0", }}
           >
             Autobongs is an innovative and optimized <br /> ecommerce platform
             for devices and accessories <br /> used in the enjoyment of
